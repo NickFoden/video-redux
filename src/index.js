@@ -1,6 +1,8 @@
-// Create a new component. this component should produce html
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const App = function() {
+const App () => {
     return<div> Hi ! </div>;
 }
-//Take thsi component's generated html and put it on the page
+
+ReactDOM.render(<App />, document.querySelector('.container'));
